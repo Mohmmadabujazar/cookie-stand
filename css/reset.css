@@ -11,6 +11,7 @@ body {
     font-style: initial;
     color: rgba(240, 44, 18, 0.76);
     font-size: 50px;
+
     }
     #tablecookies{
 
@@ -25,6 +26,3 @@ body {
               
         border-collapse: collapse;
         }
-
-       
-   
