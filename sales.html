@@ -6,13 +6,35 @@
 </head>
 <body>
 <header>
+    <section>
 <h2>Sales Area </h2>
+<fieldset>
+    <legend> Sales Area </legend>
+<form id="salesform">
+        <label  for="branchName">Branch Name</label>
+        <input id="branchName" type="text">
+        <label for="minCustomer">Min Customer</label>
+        <input id = "minCustomer" min="0" type="number">
+        <label for="maxCustomer">Max Customer</label>
+        <input id="maxCustomer" type="number">
+        <label for="avgCookies">Avg Cookies</label>
+        <input id="avgCookies" step="0.1" type="number">
+
+        <button type="submit">Save</button>
+</form>
+</section>
+</fieldset>
 </header>
 <main>
-    <div id="cookiesSalmon"></div>
-    <table id="tablecookies"></table>
+    
+ 
 </main>
-<footer></footer>  
+<footer>
+    <section>
+        <div id="cookiesSalmon"></div>
+        <table id="tablecookies"></table>
+    </section>
+</footer>  
 <script src="./js/apps.js"></script>
 </body>
 </html>
