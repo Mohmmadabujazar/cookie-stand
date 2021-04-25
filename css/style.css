@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
+body {
+    width: 1100px;
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
+    display: grid;
+    grid-template-rows: 100px 1fr 150px;
+    gap: 30px;
+    }
+    
+     header {
+    display: grid;
+    grid-template-columns:200px 1fr;
+    align-items: center;
+    background-color: #aab9da;
+    
+    } 
+    .logo{
+        width: 200px;
+    }
+    header h2 {
+     margin-left: 200px;
+     font-style: initial;
+     color: rgba(240, 44, 18, 0.76);
+    }
+    main {
+        
+        margin: auto;
+        display: grid;
+        grid-template-rows: 450px 375px 400px;
+        gap: 30px;
+        }
+    main section{
+        display: grid;
+    grid-template-columns:60px 1fr;
+    align-items: center;
+    }
+     main nav {
+         font-size: 40px;
+         text-decoration: none;
+         text-transform: capitalize;
+         color:#dd3c7acc;
+         margin-left: 100px;
+     }
+     .family{
+         width: 600px;
+         margin-left: 500px;
+     }
+main {
+    
+   
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 30px;
+    }
+    main section:nth-child(2){
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        gap: 30px;
+        }
+
+        main section:nth-child(3){
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            gap: 30px;
+            }
+
+            footer {
+                background-color: #1bac1bc9;
+                
+            } 
+            footer nav {
+                text-align: center;  
+            }
+            footer nav a {
+                display:inline-block ;
+                text-decoration: none;
+                padding:10px 45px;
+                text-transform: capitalize;
+                color:#fc5c00fb;
+                position: relative;
+                
+            }
+            footer h6{
+                font-size: 15px;
+                font-style: inherit;
+            }

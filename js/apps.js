@@ -1,6 +1,7 @@
 'use strict';
 const parentElement = document.getElementById('cookiesSalmon');
 let tablecookies = document.getElementById('tablecookies');
+const salesform= document.getElementById('salesform')
 
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
@@ -146,4 +147,22 @@ console.log(lima);
 
 footr();
 
+salesform.addEventListener('submit',salesalmon);
+function salesalmon(event){
+    event.preventDefault();
+const name = event.target.branchName.value;
+const minCust = event.target.minCustomer.value;
+const maxCust= event.target.maxCustomer.value;
+const avCookieSale= event.target.avgCookies.value;
 
+new Salmon (name, minCust, maxCust, avCookieSale );
+
+tablecookies.innerHTML='',
+heading();
+render();
+getAvg();
+footr();
+
+Salmon.reset();
+
+}
